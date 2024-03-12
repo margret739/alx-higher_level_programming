@@ -1,11 +1,10 @@
 #!/usr/bin/node
-let num = 0;
-let process.argv[2] = parseInt(num,10);
+let num = 89;
+let process = parseInt(num,10);
 
-if (process.argv[2] === undefined) {
-	console.log('Not a number');
+if (process.argv === undefined) {
+	console.log('My number: ' + process);
 }
-else
-{
-	console.log(process.argv[2]);
+else {
+	console.log(process.argv);
 }
